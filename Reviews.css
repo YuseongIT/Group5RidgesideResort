@@ -471,5 +471,23 @@ filter: brightness(140%);
 
 /* FOOTER END */
 
+.survey {
+   display: block;
+   margin: 0 auto;
+   border: 5px solid black; 
+}
 
+.review-container2{
+   max-width: 1000px;
+ margin: 50px auto;
+ padding: 30px 50px;
+ background-color: #2F3334;
+ border-radius: 8px;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ color: #a8d290;
+ z-index: 3;
+ border: solid 3px;
+ justify-content: center;
+ align-items: center;
+}
 
