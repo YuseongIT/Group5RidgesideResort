@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Design.css">
+    <link rel="icon" type="image/x-icon" href="Images/Ridgeside_Icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="Function.js"></script>
+    <title>Locations</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="Logo" src="Images/RidgesideHeaderLogo.png" alt="Website Icon">
+        </div>
+        <nav>
+            <a style="padding: 35px;padding-top: 35px; padding-bottom: 35px" href="index.html">HOME</a>
+            <a id="main" style="padding-top: 35px; padding-bottom: 36px" href="Locations.html">LOCATIONS</a>
+            <a style="padding-top: 35px; padding-bottom: 36px" href="Reservations.html">RESERVATIONS</a>
+            <a style="padding-top: 35px; padding-bottom: 36px" href="RulesAndReg.html">RULES AND REGULATIONS</a>
+            <a style="padding-top: 35px; padding-bottom: 36px" href="Community.html">COMMUNITY</a>
+            <a style="padding-top: 35px; padding-bottom: 36px" href="Reviews.html">REVIEWS</a>
+            <a style="padding-top: 35px; padding-bottom: 36px" href="AboutUs.html">ABOUT US</a>
+        </nav>
+    </header>
+
+    <content>
+        <div class="video-background-with-play-button">
+            <video src="LocationsImages/BG-Video.mp4" alt="Background Video" autoplay loop muted></video>
+            <div class="centered-text">
+                <h1>Welcome To Ridgeside Resort</h1>
+                <p>A Place Where Tranquility Meets Adventure!</p>
+            </div>              
+        </div>          
+        <div class="background-picture">
+            <div class="container">
+                <div class="location-container">
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/Waterpark.png" alt="Waterpark" class="location-image">
+                        <span class="location-text">Ridgeside Waterpark</span>
+                        <div class="location-info hidden">
+                            <p>Plunge into unparalleled aquatic luxury at our expansive Waterpark, where exhilarating slides and lush landscapes converge to create an enchanting realm of leisure, peace and excitement.</p>
+                            <br>
+                            <a style="font-family: Rowdies; margin: 2px 25px;" class="button-label" href="#">Back</a>
+                        </div>
+                        <div id="googleMapWaterpark" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15434.512068280774!2d121.11112213955077!3d14.73361070000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bb6ed1105b19%3A0xefeac0592535bbf!2sMontalban%20Waterpark%20and%20Garden%20Resort!5e0!3m2!1sen!2sph!4v1714535537916!5m2!1sen!2sph" 
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/SwimmingPool.png" alt="SwimmingPool" class="location-image">
+                        <span class="location-text">Swimming Pools</span>
+                        <div class="location-info hidden">
+                            <p>Relax in style at our lavish Swimming Pool, a tranquil oasis where glistening waters beckon beneath the sun, providing moments of sheer relaxation amidst our resort's idyllic surroundings.</p>
+                            <br>
+                            <a style="font-family: Rowdies; margin: 2px 25px;" class="button-label" href="#">Back</a>
+                        </div>
+                        <div id="googleMapSwimmingPool" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15433.43646945301!2d121.05977233955075!3d14.748786499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b11169ae6109%3A0x36cbea49703088a8!2sPrivate%20Pool%20and%20Spa!5e0!3m2!1sen!2sph!4v1714556988093!5m2!1sen!2sph" 
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/LocalFarm.png" alt="Cottage" class="location-image">
+                        <span class="location-text">Cottage Area</span>
+                        <div class="location-info hidden">
+                            <p>Experience rustic refinement at our exclusive Cottages, nestled amidst lush hillsides, each elegantly appointed retreat exuding warmth and sophistication for discerning guests seeking comfort.</p>
+                            <br>
+                            <a style="font-family: Rowdies; margin: 2px 25px;" class="button-label" href="#">Back</a>
+                        </div>
+                        <div id="googleMapCottage" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123550.68474083964!2d120.96137431640625!3d14.601417300000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9a2aea21d5f%3A0xb880b3a6ea337a6b!2sThe%20Cottage%20Milktea%20Lodge!5e0!3m2!1sen!2sph!4v1714557036227!5m2!1sen!2sph" 
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/LocalFarm.png" alt="LocalFarm" class="location-image">
+                        <span class="location-text">Ridgeside Local Farm</span>
+                        <div class="location-info hidden">
+                            <p>Embark on a culinary journey at our Local Farm, where organic delights flourish in harmony with nature's bounty, inviting guests to savor the freshest flavors in a picturesque setting.</p>
+                            <br>
+                            <a style="font-family: Rowdies; margin: 2px 25px;" class="button-label" href="#">Back</a>
+                        </div>
+                        <div id="googleMapLocalFarm" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123550.51433833424!2d120.9613741152438!3d14.601720640082318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf673e17e657%3A0x11d419c89b33737e!2sMactag%20Lettuce%20Farm!5e0!3m2!1sen!2sph!4v1714557071887!5m2!1sen!2sph" 
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/Watefall.png" alt="Watefall" class="location-image">
+                        <span class="location-text">Waterfall Lagoon</span>
+                        <div class="location-info hidden">
+                            <p>Discover nature's grandeur at our majestic Waterfall, a hidden gem within our resort, where cascading streams and lush foliage create a mesmerizing sanctuary of tranquility and awe.</p>
+                            <br>
+                            <a style="font-family: Rowdies; margin: 2px 25px;" class="button-label" href="#">Back</a>
+                        </div>
+                        <div id="googleMapWaterfall" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123550.34393293087!2d120.96137391408166!3d14.602023979158723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1335c87b98b%3A0xec1b2546a35d5d58!2sZytek%20Mineral%20Waterfalls%20-%20Jungle%20Bath%20%22Batis%20Sa%20Siyudad%22!5e0!3m2!1sen!2sph!4v1714557108471!5m2!1sen!2sph" 
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/Restaurant.png" alt="Restaurant" class="location-image">
+                        <span class="location-text">Ridgeside Tropical Cuisine</span>
+                        <div class="location-info hidden">
+                            <p>Savor exquisite cuisine at our renowned Restaurant, where culinary mastery meets elegant ambiance, promising an unforgettable dining experience amid panoramic views of our sprawling estate.</p>
+                            <br>
+                            <a style="font-family: Rowdies; margin: 2px 25px;" class="button-label" href="#">Back</a>
+                        </div>
+                        <div id="googleMapRestaurant" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7724.3046235705015!2d120.9919580424705!3d14.533278929348407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9451dbec591%3A0x3c0ac3b1bde532d!2sDad%20%26%20Mom&#39;s%20Family%20Restaurant%20Inc.!5e0!3m2!1sen!2sph!4v1714557150616!5m2!1sen!2sph" 
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </content>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <img id="WebsiteFooter" src="Images/RidgesideFooterLogo.png">
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="Locations.html">Locations</a>
+                <a href="Reservations.html">Reservations</a>
+                <a href="RulesAndReg.html">Rules and Regulations</a>
+                <a href="Community.html">Community Board</a>
+                <a href="Reviews.html">Reviews</a>
+                <a href="AboutUs.html">About Us</a>
+            </p>
+            <p class="quicknavi">Quick Navigation</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="location"></i>
+                <p><span>Technological Institute of the Philippines</span> Manila City, Philippines</p>
+            </div>
+            <div>
+                <i class="phone"></i>
+                <p>+63 920 464 5310</p>
+            </div>
+            <div>
+                <i class="email"></i>
+                <p><a href="https://www.tripadvisor.com.ph/LocationPhotoDirectLink-g317121-d1174247-i130075826-Estancia_Resort-Tagaytay_Cavite_Province_Calabarzon_Region_Luzon.html" target="_blank">@ridgesideresort.com</a></p>
+            </div>
+            <div class="footer-icons">
+                <a href="https://facebook.com" target="_blank"><img src="Images/Facebook.png"></a>
+                <a href="https://www.x.com" target="_blank"><img src="Images/TwitterLogo.png"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="Images/InstagramLogo.png"></a>
+                <a href="https://youtube.com" target="_blank"><img src="Images/YoutubeLogo.png"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="about">
+                <span>About the Ridgeside Resort Website</span>
+                This website was created as a Finals project for the Human Computer Interaction (HCI) course by students of IT12S1 -
+                John Ivan Roxas, Nikolai Ng, Daniel Espela, Gabriel Jelo Galang, and Clark Guin Barrientos.
+            </p>
+            <p style="color:  #92999f; font-size: 15px; font-weight: lighter;">This website serves solely as a demonstration of our interface design skills and does not advertise Ridgeside Resort as a real-life location.</p>
+        </div>
+    </footer>
+</body>
+</html>

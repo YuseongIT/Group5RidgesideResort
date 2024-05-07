@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<title>Reservation</title>
+
+		<link rel="stylesheet" type="text/css" href="Reservationstyle.css">
+		<link rel="icon" type="image/x-icon" href="Images/Ridgeside_Icon.png">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<!-- Rowdies Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+		<!-- Rowdies Font -->
+
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="Reservationscript.js"></script>
+
+	</head>
+	<body>
+
+		<header>
+			<div><img id="logo" src="Images/RidgesideHeaderLogo.png" alt="Website Icon"></div>
+			<nav>
+				<a style="padding: 35px;padding-top: 35px; padding-bottom: 35px" href="index.html">HOME</a>
+   <a style="padding-top: 35px; padding-bottom: 36px" href="Locations.html">LOCATIONS</a>
+   <a id="main" style="padding-top: 35px; padding-bottom: 36px" href="Reservations.html">RESERVATIONS</a>
+   <a style="padding-top: 35px; padding-bottom: 36px" href="RulesAndReg.html">RULES AND REGULATIONS</a>
+   <a style="padding-top: 35px; padding-bottom: 36px" href="Community.html">COMMUNITY</a>
+   <a style="padding-top: 35px; padding-bottom: 36px" href="Reviews.html">REVIEWS</a>
+   <a style="padding-top: 35px; padding-bottom: 36px" href="AboutUs.html">ABOUT US</a>
+			</nav>
+		</header>
+
+		<div class="form-box">
+			<form action="">
+				<h1 class="label">Reservation Form</h1>
+				<hr>
+				<h2 for="firstName">First Name</h2>
+				<div class="input-box">
+					<input type="text" placeholder=" Your first name" id="firstName" autocomplete="off" required>
+				</div>
+
+				<h2 for="lastName">Last Name</h2>
+				<div class="input-box">
+					<input type="text" placeholder="Your last name" id="lastName" autocomplete="off" required>
+				</div>
+
+				<h2 for="userEmail">E-mail</h2>
+				<div class="input-box">
+					<input type="email" placeholder="Your E-mail" id="userEmail" autocomplete="off" required>
+				</div>
+
+				<h2 for="contactNumber">Phone Number</h2>	
+				<div class="input-box">
+					<input type="text" placeholder="Your Number" id="contactNumber" autocomplete="off" required>	
+				</div>
+
+				<h2 for="roomType">Room Type</h2>	
+				<div class="input-box">
+					<select id="roomType">
+						<option style=" font-size: 20px;"value = "" disabled selected hidden>Choose a Room Type</option>
+						<option value="Standard Room">Standard Room (1 to 3 People)</option>
+						<option value="Family Room">Family Room (4 to 6 People)</option>
+						<option value="Deluxe Room">Deluxe Room (More than 6 People)</option>
+					</select>			
+				</div>
+
+				<h2 for="guestNumber">Number of Guests</h2>	
+				<div class="input-box">
+					<input type="number" placeholder="How many guests?" id="guestNumber" autocomplete="off" required> 
+				</div>
+
+				<h2 for="serviceType">Service Selection</h2>	
+				<div class="input-box">
+					<select id="serviceType">
+						<option value = "" disabled selected hidden>Choose a Service Type</option>
+						<option value="Standard Package">Standard Package</option>
+						<option value="Deluxe Package">Deluxe Package</option>
+						<option value="Event Package">Event Package</option>
+						<option value="Adventure Package">Adventure Package</option>
+					</select>			
+				</div>
+
+				<h2 for="checkIn">Check-In Date</h2>	
+				<div class="input-box">
+					<input type="date" id="checkIn" required> 			
+				</div>
+							
+				<h2 for="checkOut">Check-Out Date</h2>	
+				<div class="input-box">
+					<input type="date" id="checkOut" required> 			
+				</div>
+
+				<button type="button" class="btn" id="submitBtn" onclick="sendEmail()">Submit</button>
+			</form>
+		</div>
+		<br><br><br>
+		
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+	
+				<img id="WebsiteFooter"src="Images/RidgesideFooterLogo.png">
+	
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					<a href="Locations.html">Locations</a>
+					<a href="Reservations.html">Reservations</a>
+					<a href="RulesAndReg.html">Rules and Regulations</a>
+					<a href="Community.html">Community Board</a>
+					<a href="Reviews.html">Reviews</a>
+					<a href="AboutUs.html">About Us</a>
+				</p>
+	
+				<p class="quicknavi">Quick Navigation</p>
+				
+			</div>
+	
+			<div class="footer-center">
+	
+				<div>
+					<i class="location"></i>
+					<p><span>Technological Institute of the Philippines</span> Manila City, Philippines</p>
+				</div>
+	
+				<div>
+					<i class="phone"></i>
+					<p>+63 920 464 5310</p>
+				</div>
+	
+				<div>
+					<i class="email"></i>
+					<p><a href="https://www.tripadvisor.com.ph/LocationPhotoDirectLink-g317121-d1174247-i130075826-Estancia_Resort-Tagaytay_Cavite_Province_Calabarzon_Region_Luzon.html" target="_blank">@ridgesideresort.com</a></p>
+				</div>
+	
+				<div class="footer-icons">
+					<a href="https://facebook.com" target="_blank"><img src="Images/Facebook.png"></a>
+					<a href="https://www.x.com" target="_blank"><img src="Images/TwitterLogo.png"></a>
+					<a href="https://www.instagram.com" target="_blank"><img src="Images/InstagramLogo.png"></a>
+					<a href="https://youtube.com" target="_blank"><img src="Images/YoutubeLogo.png"></a>
+				</div>
+	
+			</div>
+	
+			<div class="footer-right">
+				<p class="about">
+				<span>About the Ridgeside Resort Website</span>
+				This website was created as a Finals project for the Human Computer Interaction (HCI) course by students of IT12S1 -
+				John Ivan Roxas, Nikolai Ng, Daniel Espela, Gabriel Jelo Galang, and Clark Guin Barrientos. </p>
+	
+				<p style="color:  #92999f; font-size: 15px; font-weight: lighter;">This website serves solely as a demonstration of our interface design skills and does not advertise Ridgeside Resort as a real-life location.</p>
+			</div>
+	
+		</footer>
+
+	</body>
+</html>
